@@ -1,8 +1,13 @@
+const webpack = require('webpack')
 const { VueLoaderPlugin } = require('vue-loader');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const config = {
   mode: 'development',
+  devServer: {
+    hot: true,
+    contentBase: '../dist'
+  },
   resolve: {
     extensions: [".js", ".json", ".vue", ".css"],
     alias: {
@@ -41,6 +46,7 @@ const config = {
       template: path.join(__dirname, '../src', 'index.html'),
       inject: true,
     }),
+    new webpack.HotModuleReplacementPlugin()
   ],
 };
 
