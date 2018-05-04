@@ -1,9 +1,13 @@
 const { VueLoaderPlugin } = require('vue-loader');
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 const config = {
   mode: 'development',
   resolve: {
     extensions: [".js", ".json", ".vue", ".css"],
+    alias: {
+      vue: 'vue/dist/vue.js'
+    }
   },
   module: {
     rules: [
@@ -31,7 +35,12 @@ const config = {
     ],
   },
   plugins: [
-    new VueLoaderPlugin()
+    new VueLoaderPlugin(),
+    new HtmlWebpackPlugin({
+      filename: path.join(__dirname, '../dist', 'index.html'),
+      template: path.join(__dirname, '../src', 'index.html'),
+      inject: true,
+    }),
   ],
 };
 
