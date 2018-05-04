@@ -8,7 +8,8 @@
   "scripts": {
     "build1": "webpack --mode development",
     "build2": "webpack --config build/webpack.dev.js",
-    "build": "webpack-dev-server --config build/webpack.dev.js",
+    "build3": "webpack-dev-server --config build/webpack.dev.js",
+    "build": "node build/dev-client.js",
     "dev": ""
   },
   "dependencies": {
