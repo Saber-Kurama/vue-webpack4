@@ -2,6 +2,9 @@
     "name": "fancard-app-h5",
     "version": "0.1.0",
     "private": true,
+    "scripts": {
+      "dev": "nodemon index.js"
+    },
     "dependencies": {
       "fs-extra": "3.0.1",
       "http-proxy-middleware": "^0.18.0",

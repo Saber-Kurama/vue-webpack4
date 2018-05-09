@@ -15,5 +15,10 @@ yarn-error.log*
 *.njsproj
 *.sln
 
+node_modules
+packages/client/dist
+packages/client/node_modules
+packages/server/node_modules
+
 # Ignore compiled tokens
 src/assets/tokens/

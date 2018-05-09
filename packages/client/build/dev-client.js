@@ -11,7 +11,16 @@ const browser = process.platform === 'win32' ? 'Chrome' : '/Applications/Google 
 const options = {
   contentBase: '../dist',
   hot: true,
-  host: 'localhost'
+  host: 'localhost',
+  // proxy: {
+  //   "/api": {
+  //     target: "http://localhost:3009",
+  //     pathRewrite: {"^/api" : ""}
+  //   }
+  // }
+  proxy: {
+    "/api": "http://localhost:3009"
+  }
 };
 webpackDevServer.addDevServerEntrypoints(conf, options);
 const compiler = webpack(conf);
