@@ -10,7 +10,7 @@
     "build:dev": "cd packages/client && yarn build"
   },
   "lint-staged": {
-    "packages/client/*.{js,vue}": [
+    "packages/client/*/*.{js,vue}": [
       "prettier --write",
       "git add"
     ]
