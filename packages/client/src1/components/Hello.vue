@@ -21,12 +21,11 @@
 </template>
 
 <script>
-var saber = "saber11";
 export default {
   name: "hello",
   data() {
     return {
-      msg: "Welcome to Your Vue.js App1",
+      msg: 'Welcome to Your Vue.js App',
     };
   },
 };

@@ -10,7 +10,7 @@
     "build:dev": "cd packages/client && yarn build"
   },
   "lint-staged": {
-    "packages/client/*/*.{js,vue}": [
+    "packages/client/src/**/*.{js,vue}": [
       "prettier --write",
       "git add"
     ]
@@ -26,7 +26,8 @@
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-prettier": "^2.6.0",
     "eslint-plugin-vue": "^4.5.0",
-    "lint-staged": "^6.0.0",
+    "lint-staged": "^7.1.0",
+    "husky": "^0.14.3",
     "prettier": "^1.12.1"
   }
 }
