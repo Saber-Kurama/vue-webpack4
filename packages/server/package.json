@@ -1,0 +1,30 @@
+{
+    "name": "fancard-app-h5",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+      "fs-extra": "3.0.1",
+      "http-proxy-middleware": "^0.18.0",
+      "husky": "^0.14.3",
+      "koa": "2.3.0",
+      "koa-bodyparser": "^3.2.0",
+      "koa-convert": "^1.2.0",
+      "koa-json": "^2.0.2",
+      "koa-logger": "^2.0.1",
+      "koa-onerror": "^1.2.1",
+      "koa-react-view": "^3.0.0",
+      "koa-router": "^7.1.1",
+      "koa-static": "^3.0.0",
+      "koa-static-cache": "4.1.1",
+      "koa-views": "^5.2.1",
+      "koa2-connect": "^1.0.2",
+      "lodash": "^4.17.5",
+      "moment": "^2.21.0",
+      "numeral": "^2.0.6",
+      "object-assign": "4.1.1",
+      "promise": "8.0.1"
+    },
+    "devDependencies": {
+    }
+  }
+  
