@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import Hello from "./components/Hello";
-var saber = "saber";
+import Hello from "./components/Hello"
+var saber = "saber"
 export default {
   name: "app",
   components: {

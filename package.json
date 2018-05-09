@@ -3,10 +3,17 @@
   "description": "vue ui ",
   "license": "MIT",
   "scripts": {
+    "precommit": "lint-staged",
     "install": "lerna bootstrap",
     "dev:client": "cd packages/client && yarn dev",
     "dev:server": "cd packages/server && yarn dev",
     "build:dev": "cd packages/client && yarn build"
+  },
+  "lint-staged": {
+    "packages/client/*.{js,vue}": [
+      "prettier --write",
+      "git add"
+    ]
   },
   "private": true,
   "workspaces": [
@@ -18,6 +25,8 @@
     "eslint": "^4.19.1",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-prettier": "^2.6.0",
-    "eslint-plugin-vue": "^4.5.0"
+    "eslint-plugin-vue": "^4.5.0",
+    "lint-staged": "^6.0.0",
+    "prettier": "^1.12.1"
   }
 }
