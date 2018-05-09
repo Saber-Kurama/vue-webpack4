@@ -13,6 +13,11 @@
     "packages/*"
   ],
   "devDependencies": {
-    "lerna": "2.10.2"
+    "babel-eslint": "^8.2.3",
+    "lerna": "2.10.2",
+    "eslint": "^4.19.1",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-vue": "^4.5.0"
   }
 }
