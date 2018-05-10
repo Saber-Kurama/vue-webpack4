@@ -25,7 +25,7 @@ router.post(
 
 router.get('/bar', function(ctx, next) {
   console.log('???xx');
-  ctx.body = 'this is a users/bar response';
+  ctx.body = 'this is a users/bar response1';
 });
 
 module.exports = router;
