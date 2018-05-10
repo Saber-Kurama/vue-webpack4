@@ -7,7 +7,8 @@
     "install": "lerna bootstrap",
     "dev:client": "cd packages/client && yarn dev",
     "dev:server": "cd packages/server && yarn dev",
-    "build:dev": "cd packages/client && yarn build"
+    "build:client:dev": "cd packages/client && yarn build2",
+    "build:client": "cd packages/client && yarn build"
   },
   "lint-staged": {
     "packages/client/src/**/*.{js,vue}": [

@@ -10,6 +10,7 @@
     "build2": "webpack --config build/webpack.dev.js",
     "build3": "webpack-dev-server --config build/webpack.dev.js",
     "build": "webpack --config build/webpack.prod.js",
+    "babel": "npx babel test.js --out-file test-compiled.js",
     "dev": "node build/dev-client.js"
   },
   "dependencies": {
@@ -18,8 +19,12 @@
   },
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.46",
+    "@babel/cli": "^7.0.0-beta.46",
     "@babel/preset-env": "^7.0.0-beta.46",
     "@babel/plugin-syntax-dynamic-import": "^7.0.0-beta.46",
+    "@babel/preset-stage-2": "^7.0.0-beta.46",
+    "@babel/plugin-transform-runtime":"^7.0.0-beta.46",
+    "@babel/runtime": "^7.0.0-beta.46",
     "babel-loader": "^8.0.0-beta.2",
     "css-loader": "^0.28.11",
     "file-loader": "^1.1.11",
