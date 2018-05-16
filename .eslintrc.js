@@ -21,7 +21,7 @@ module.exports = {
   plugins: ["vue", "prettier"],
   rules: {
     'prettier/prettier': 'error',
-    // 'no-var': "error",
+    'no-var': "error",
     'semi': ["error", "always"]
   },
   settings: {

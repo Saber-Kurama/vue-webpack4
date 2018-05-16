@@ -7,7 +7,7 @@
 
 <script>
 import Hello from "./components/Hello";
-var saber = "saber11";
+let saber = "saber11";
 export default {
   name: "app",
   components: {
